@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-1</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+
+        /* NAVBAR */
+        .nav {
+            background: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: black;
+        }
+
+        button {
+            background: green;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
+        /* HERO */
+        .hero {
+            background-image: url("hero-bg.png");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 60px;
+            text-align: center;
+        }
+
+        .hero span {
+            color: green;
+        }
+
+        .highlight-box {
+            display: inline-block;
+            background-color: white;
+            color: green;
+            border-radius: 20px;
+            padding: 5px 15px;
+            margin-bottom: 20px;
+        }
+
+        /* FEATURES */
+        .section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .box {
+            width: 200px;
+            height: 220px;
+            background: #f2f2f2;
+            padding: 15px;
+            margin: 1%;
+            float: left;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        /* SOLUTION SECTION */
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            padding: 40px;
+        }
+
+        .image-side img {
+            width: 500px;
+        }
+
+        .text-side {
+            max-width: 700px;
+        }
+
+        .green-text {
+            color: green;
+            font-weight: lighter;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        ul li::before {
+            content: "✔ ";
+            color: green;
+            font-weight: bold;
+        }
+
+        /* CTA */
+        .cta {
+            background: rgb(241, 239, 236);
+            margin: 80px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* FOOTER */
+        .footer {
+            background: rgb(1, 1, 53);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="nav">
+        <img src="logo-navbar.png" width="139" height="60">
+        <a href="#">Features</a>
+        <a href="#">How it Works</a>
+        <a href="#">Why It's Different</a>
+        <button>Get Early Access</button>
+    </div>
+
+    <!-- HERO -->
+    <div class="hero">
+        <div class="highlight-box">
+            <p>Early Access Now Open</p>
+        </div>
+
+        <h1>Structured Thinking,</h1>
+        <h1><span>Not Just Note-Taking.</span></h1>
+
+        <p>A private space to store notes, links and learning summaries designed to</p>
+        <p>help you think clearly and connect ideas.</p>
+
+        <button>Start Building Your Vault <img src="ArrowRight.png"></button>
+        <button>See How It Works</button>
+    </div>
+
+    <!-- PROBLEMS -->
+    <div class="section">
+        <h2>Notes Don't Fail, Structure Does.</h2>
+        <p>Your tools just weren't built for how knowledge actually works.</p>
+
+        <div class="box">
+            <img src="Vector.png">
+            <h3>Scattered Notes</h3>
+            <p>Your ideas live in different apps, none connected.</p>
+        </div>
+
+        <div class="box">
+            <img src="Bookmarks.png">
+            <h3>Bookmark Overload</h3>
+            <p>Hundreds of saved links you never revisit.</p>
+        </div>
+
+        <div class="box">
+            <img src="Brain.png">
+            <h3>No Idea Connections</h3>
+            <p>Insights stay isolated.</p>
+        </div>
+
+        <div class="box">
+            <img src="Info.png">
+            <h3>Forget What You Learned</h3>
+            <p>Knowledge fades without structure.</p>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+
+    <!-- SOLUTION -->
+    <div class="container">
+        <div class="image-side">
+            <img src="knowledge.png">
+        </div>
+
+        <div class="text-side">
+            <p class="green-text">THE SOLUTION</p>
+            <h1>Your Second Brain, Structured By Design.</h1>
+
+            <ul>
+                <li>Capture ideas with structure</li>
+                <li>Connect related concepts</li>
+                <li>Build lasting knowledge</li>
+                <li>Find anything instantly</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta">
+        <h2>Ready To Think Clearly?</h2>
+        <p>Start free. No credit card required.</p>
+        <button>Get Early Access <img src="ArrowRight.png"></button>
+    </div>
+
+    <!-- FOOTER -->
+   
+    <div class="footer">
+        <img src="logo-footer.png">
+        <p>© 2026 Personal Knowledge Vault. All rights reserved.</p>
+    </div>
+   
+
+</body>
+</html>
